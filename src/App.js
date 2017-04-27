@@ -40,10 +40,17 @@ let user = {
 }
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentSection: "Browse"
+    }
+  }
   render() {
     return (
       <div className="App">
-        <Sidebar />
+        <Sidebar playlists={user.playlists} currentSection={this.state.currentSection}/>
         <Browse />
       </div>
     );
