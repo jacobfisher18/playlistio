@@ -5,13 +5,10 @@ class VideoCard extends Component {
   render() {
     return (
       <div className="VideoCard">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/tvTRZJ-4EyI?ecver=1"
-          frameborder="0"
-          allowfullscreen
-        />
+        <iframe src={this.props.src}/>
+        <p className="videoCard-title">{this.props.title}</p>
+        <p className="videoCard-artist">{this.props.artists}</p>
+        <p className="videoCard-views">{this.props.views} views</p>
       </div>
     );
   }
