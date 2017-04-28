@@ -33,6 +33,7 @@
   background-color: var(--lighter-grey);
   padding: 30px;
   display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(127,127,127,0.50);
 }
 
 .logo {
@@ -45,6 +46,7 @@
   font-size: 16px;
   color: var(--light-grey);
   margin-bottom: 15px;
+  margin-top: 25px;
 }
 
 .sidebar-img {
@@ -70,14 +72,18 @@
   cursor: pointer;
 }
 
-.Browse {
+.Section {
   width: 80%;
   margin-left: 20%;
   padding: 100px 50px;
   background-image: linear-gradient(-180deg, #EFEEEE 0%, #FFFFFF 100%);
 }
 
-.Browse h1 {
+.Explore {
+
+}
+
+.Section h1 {
   font-weight: normal;
   color: var(--main-color);
   width: auto;
@@ -123,4 +129,15 @@
   font-size: 9px;
   color: var(--dark-grey);
   line-height: 20px;
+}
+
+@media (max-width: 900px) {
+  .Sidebar {
+    width: 25%;
+  }
+
+  .Explore {
+    width: 75%;
+    margin-left: 25%;
+  }
 }
