@@ -3,6 +3,7 @@ import Sidebar from './Sidebar';
 import Explore from './Explore';
 import Popular from './Popular';
 import ComingSoon from './ComingSoon';
+
 import './App.css';
 
 let user = {
@@ -48,6 +49,10 @@ class App extends Component {
     this.state = {
       currentSection: "Explore"
     };
+  }
+
+  componentWillMount() {
+
   }
 
   renderCurrentSection() {
